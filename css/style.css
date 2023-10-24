@@ -37,3 +37,54 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.carousel-height{
+  height: 26rem;
+}
+
+@media only screen and (max-width: 495px) {
+  .carousel-height{
+    height: 14rem;
+  }
+}
+
+/* Sobrescreve Cores bootstrap.css */
+:root{
+  --primary:#ea1d2c;
+  --danger:#ee4c58;
+}
+
+.text-primary{
+  color: var(--primary) !important;
+}
+
+a, .text-primary, a.text-primary:focus
+
+{
+  color: var(--primary);
+}
+
+a:hover,a.text-primary:hover {
+  color: var(--danger) ;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+a.bg-primary:focus,a.bg-primary:hover {
+  background-color: var(--danger) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+
+}
+
+.btn-primary:hover{
+  background-color: var(--danger) !important;
+  border-color: var(--danger) !important;
+  cursor: pointer;
+  
+}
