@@ -6,12 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <link rel="icon" href="img/icone-ifood-riso.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     
   </head>
   <body>
-   
+
 <!--  Modal   -->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -32,7 +33,7 @@
                 <label for="loginSenha">Senha</label>
                 <input type="password" class="form-control" id="loginSenha">
               </div>
-              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <button type="submit" class="btn bg-primary text-white">Entrar na Conta</button>
               <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
             </form>
           </div>
@@ -67,7 +68,7 @@
     
     <section class="container">
       <div class="my-5 text-center">
-        <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+        <span class="h6 d-block">VENHA SER DO CLUB IFOOD</span>
         <h1 class="display-4 text-primary">INSCREVA-SE</h1>
       </div>
       <div class="row">
@@ -161,7 +162,7 @@
               </div>
             </div>
           </div>
-           
+          
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -178,10 +179,9 @@
           <div class="bg-light rounded p-4 box-shadow">
             <h2>Gold</h2>
             <ul class="lista-plano list-unstyled">
-              <li>→ 30 dias de viagem</li>
-              <li>→ 3 destinos diferentes</li>
-              <li>→ Tudo pago pela empresa</li>
-              <li>→ Ingressos para festas</li>
+              <li><span data-toggle="tooltip" data-placement="top" title="Isso mesmo, são 30 dias totais durante a viagem.">→ 30 dias de frete grátis </li>
+              <li>→ 4 categorias diferentes</li>
+              <li>→ 20 cupons mensais</li>
             </ul>
             <form>
               <div class="form-group">
@@ -193,9 +193,12 @@
                 </select>
               </div>
             </form>
-            <div class="row mt-4">
+            <div class="row align-items-center mt-4">
               <div class="col">
-                <span class="h4">R$5.000</span>
+                <a href="inscricao.html" class="btn bg-primary btn-lg btn-block text-white">Assinar Plano</a>
+              </div>
+              <div class="col">
+                <span class="h4">R$25.00</span>
               </div>
             </div>
           </div>
@@ -205,27 +208,11 @@
     
     <footer class="bg-dark text-white mt-5">
       <div class="container py-4">
-        <div class="row">
-          <div class="col-md-3 col-6">
-            <h4 class="h6">PÁGINAS</h4>
-            <ul class="list-unstyled">
-              <li><a href="planos.html">Planos</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li><a href="inscricao.html">Inscreva-se</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-6">
-            <h4 class="h6">LOCAIS</h4>
-            <ul class="list-unstyled">
-              <li><a href="local.html">California</a></li>
-              <li><a href="local.html">Paris</a></li>
-              <li><a href="local.html">Dublin</a></li>
-            </ul>
-          </div>
+        <div class="row flex">
           <div class="col-md-4">
             <h4 class="h6">DADOS DE CONTATO</h4>
             <ul class="list-unstyled text-secondary">
-              <li>caravan@caravan.com.br</li>
+              <li>ifood@ifood.com.br</li>
               <li>21 99999-9999</li>
               <li>De Seg. à Sex. das 8h às 18h</li>
             </ul>
@@ -240,8 +227,11 @@
           </div>
         </div>
       </div>
-      <div class="bg-primary text-center py-3">
-        <p class="mb-0">Caravan © 2017. Alguns direitos reservados.</p>
+      <div class="bg-primary text-center py-3 flex">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/icone-ifood-riso.png" width="40px" alt="Ifood">
+        </a>
+        <p class="mb-0">Ifood © 2023. Alguns direitos reservados.</p>
       </div>
     </footer>
     
