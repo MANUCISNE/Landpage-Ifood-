@@ -57,7 +57,7 @@ body {
     height: 14rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
   .carousel-height{
     height: 36rem;
   }
@@ -67,6 +67,36 @@ body {
 :root{
   --primary:#ea1d2c;
   --danger:#ee4c58;
+}
+
+.bg-dark-gray{
+  background-color: var(--gray-bg);
+}
+
+button:focus{
+  outline: 1px auto var(--white) !important;
+}
+a.text-light:hover{
+  color:var(--secondary) !important
+}
+.btn-outline-light:hover{
+  background-color: var(--white) !important;
+  color:var(--secondary) !important;
+}
+@media (prefers-color-scheme: dark){
+
+  :root{
+    --primary:#ee4c58;
+    --danger:#ee4c58;
+    --white:#fff;
+    --light:#0e0e0e;
+    --dark:#d9d4d4;
+    --gray-bg:#b3b3b3;
+    --secondary:#0e0e0e
+  }
+  button:focus{
+    outline: 1px auto var(--white) !important;
+  }
 }
 
 .text-primary{

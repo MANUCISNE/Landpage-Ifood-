@@ -1,174 +1,191 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ifood - Planos</title>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link rel="icon" href="img/icone-ifood-riso.png">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body>
 
-<!--  Modal   -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+<head>
+  <title>Ifood - Planos</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" href="img/icone-ifood-riso.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-light">
+
+  <!--  Modal   -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-light text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="text-white" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn bg-primary text-white">Entrar na Conta</button>
+            <small class="text-muted  text-white">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal  -->
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-3 box-shadow bg-primary">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/ifood-logo.png" width="80px" alt="Ifood">
+      </a>
+  
+      <button class="navbar-toggler border-white" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Abrir Navegação">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link text-white" href="planos.html">Planos</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="btn btn-outline-light ml-md-2 text-white border-white text-primary-hover" href="inscricao.html">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--  Fecha Navegação  -->
+
+  <section class="container text-white">
+    <div class="text-center my-5">
+      <span class="h6 d-block">SEU PLANO, SUA COMODIDADE</span>
+      <h1 class="display-4 text-primary">Club Ifood</h1>
+    </div>
+    <div class="row">
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Gold</h2>
+          <ul class="lista-plano list-unstyled">
+            <li><span data-toggle="tooltip" data-placement="top"
+                title="Isso mesmo, são 30 dias totais durante a viagem.">→ 30 dias de frete grátis </li>
+            <li>→ 4 categorias diferentes</li>
+            <li>→ 20 cupons mensais</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-control bg-white" id="inputCidades">
+                <option>Selecione a cidade</option>
+                <option>California</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscricao.html" class="btn bg-primary btn-lg btn-block text-white">Assinar Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$25.00</span>
+            </div>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="loginEmail">Email</label>
-                <input type="email" class="form-control" id="loginEmail">
-              </div>
-              <div class="form-group">
-                <label for="loginSenha">Senha</label>
-                <input type="password" class="form-control" id="loginSenha">
-              </div>
-              <button type="submit" class="btn bg-primary text-white">Entrar na Conta</button>
-              <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
-            </form>
+        </div>
+      </div>
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+          <ul class="lista-plano list-unstyled">
+            <li>→ 60 dias de frete grátis </li>
+            <li>→ 6 categorias diferentes</li>
+            <li>→ 20 cupons exclusivos</li>
+          </ul>
+          <form>
+            <div class="form-group">
+              <select class="form-control bg-white" id="inputCidades">
+                <option>Selecione a cidade</option>
+                <option>California</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <a href="inscricao.html" class="btn bg-primary btn-lg btn-block text-white">Assinar Plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$75.00</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-<!-- Fecha Modal  -->
-    
-<nav class="navbar navbar-expand-md navbar-light fixed-top py-3 box-shadow bg-primary">
-  <a href="index.html" class="navbar-brand">
-    <img src="img/ifood-logo.png" width="80px" alt="Ifood">
-  </a>
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item d-flex justify-content-center">
-        <a class="nav-link text-white" href="planos.html">Planos</a>
-      </li>
-      <li class="nav-item d-flex justify-content-center">
-        <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
-      </li>
-      <li class="nav-item d-flex justify-content-center">
-        <a class="btn btn-outline-light ml-md-2" href="inscricao.html">Inscreva-se</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    
-<!--  Fecha Navegação  -->
-    
-    <section class="container">
-      <div class="text-center my-5">
-        <span class="h6 d-block">SEU PLANO, SUA COMODIDADE</span>
-        <h1 class="display-4 text-primary">Club Ifood</h1>
-      </div>
-      <div class="row">
-        <div class="col-md mb-5">
-          <div class="bg-light rounded p-4 box-shadow">
-            <h2>Gold</h2>
-            <ul class="lista-plano list-unstyled">
-              <li><span data-toggle="tooltip" data-placement="top" title="Isso mesmo, são 30 dias totais durante a viagem.">→ 30 dias de frete grátis </li>
-              <li>→ 4 categorias diferentes</li>
-              <li>→ 20 cupons mensais</li>
-            </ul>
-            <form>
-              <div class="form-group">
-                <select class="form-control bg-light" id="inputCidades">
-                  <option>Selecione a cidade</option>
-                  <option>California</option>
-                  <option>Paris</option>
-                  <option>Dublin</option>
-                </select>
-              </div>
-            </form>
-            <div class="row align-items-center mt-4">
-              <div class="col">
-                <a href="inscricao.html" class="btn bg-primary btn-lg btn-block text-white">Assinar Plano</a>
-              </div>
-              <div class="col">
-                <span class="h4">R$25.00</span>
-              </div>
-            </div>
-          </div>
+  </section>
+
+
+
+  <!--  Footer  -->
+
+  <footer class="bg-dark-gray text-light mt-md-5">
+    <div class="container py-4">
+      <div class="row flex">
+        <div class="col-md-4 text-sm-center">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>ifood@ifood.com.br</li>
+            <li>21 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+            <li class="text-primary"><a data-toggle="modal" data-target="#modalContact">Contate nos</a></li>
+          </ul>
         </div>
-        <div class="col-md mb-5">
-          <div class="bg-light rounded p-4 box-shadow">
-            <h2>Platinum <span class="badge badge-success">Novo</span></h2>
-            <ul class="lista-plano list-unstyled">
-              <li>→ 60 dias de frete grátis </li>
-              <li>→ 6 categorias diferentes</li>
-              <li>→ 20 cupons exclusivos</li>
-            </ul>
-            <form>
-              <div class="form-group">
-                <select class="form-control bg-light" id="inputCidades">
-                  <option>Selecione a cidade</option>
-                  <option>California</option>
-                  <option>Paris</option>
-                  <option>Dublin</option>
-                </select>
-              </div>
-            </form>
-            <div class="row align-items-center mt-4">
-              <div class="col">
-                <a href="inscricao.html" class="btn bg-primary btn-lg btn-block text-white">Assinar Plano</a>
-              </div>
-              <div class="col">
-                <span class="h4">R$75.00</span>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <h4 class="h6 text-center">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li class="d-flex justify-content-center"><a
+                class="btn btn-outline-secondary text-gray btn-sm btn-block mb-2 text-light-emphasis text-light-emphasis-hover"
+                href="https://www.facebook.com/ifoodnewsbrasil/" target="_blank" style="max-width: 140px">Facebook</a>
+            </li>
+            <li class="d-flex justify-content-center"><a
+                class="btn btn-outline-secondary text-gray btn-sm btn-block mb-2 text-light-emphasis text-light-emphasis-hover"
+                href="https://twitter.com/iFood" target="_blank" style="max-width: 140px">Twitter</a></li>
+            <li class="d-flex justify-content-center"><a
+                class="btn btn-outline-secondary text-gray btn-sm btn-block mb-2 text-light-emphasis text-light-emphasis-hover"
+                href="https://www.youtube.com/@ifood" target="_blank" style="max-width: 140px">Youtube</a></li>
+          </ul>
         </div>
       </div>
-    </section>
-    
-    
-    
-<!--  Footer  -->
-   
-    <footer class="bg-dark text-white mt-md-5">
-      <div class="container py-4">
-        <div class="row flex">
-          <div class="col-md-4 text-sm-center">
-            <h4 class="h6">DADOS DE CONTATO</h4>
-            <ul class="list-unstyled text-secondary">
-              <li>ifood@ifood.com.br</li>
-              <li>21 99999-9999</li>
-              <li>De Seg. à Sex. das 8h às 18h</li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4 class="h6 text-center">REDES SOCIAIS</h4>
-            <ul class="list-unstyled">
-              <li class="d-flex justify-content-center"><a class="btn btn-outline-secondary btn-sm btn-block mb-2 text-light-emphasis text-light-emphasis-hover" href="https://www.facebook.com/ifoodnewsbrasil/" target="_blank" style="max-width: 140px">Facebook</a></li>
-              <li class="d-flex justify-content-center"><a class="btn btn-outline-secondary btn-sm btn-block mb-2 text-light-emphasis text-light-emphasis-hover" href="https://twitter.com/iFood" target="_blank" style="max-width: 140px">Twitter</a></li>
-              <li class="d-flex justify-content-center"><a class="btn btn-outline-secondary btn-sm btn-block mb-2 text-light-emphasis text-light-emphasis-hover" href="https://www.youtube.com/@ifood" target="_blank" style="max-width: 140px">Youtube</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="bg-primary text-center py-3 flex">
-        <a href="index.html" class="navbar-brand">
-          <img src="img/icone-ifood-riso.png" width="40px" alt="Ifood">
-        </a>
-        <p class="mb-0">Ifood © 2023. Alguns direitos reservados.</p>
-      </div>
-    </footer>
-    
-    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+    </div>
+    <div class="bg-primary text-center py-3 flex">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/icone-ifood-riso.png" width="40px" alt="Ifood">
+      </a>
+      <p class="mb-0">Ifood © 2023. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>
