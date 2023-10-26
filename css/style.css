@@ -81,7 +81,7 @@ a.text-light:hover{
 }
 .btn-outline-light:hover{
   background-color: var(--white) !important;
-  color:var(--secondary) !important;
+  color:var(--light) !important;
 }
 @media (prefers-color-scheme: dark){
 
@@ -91,8 +91,8 @@ a.text-light:hover{
     --white:#fff;
     --light:#0e0e0e;
     --dark:#d9d4d4;
-    --gray-bg:#b3b3b3;
-    --secondary:#0e0e0e
+    --gray-bg:#ffffff4a;
+    --secondary:#d6d0d0
   }
   button:focus{
     outline: 1px auto var(--white) !important;
