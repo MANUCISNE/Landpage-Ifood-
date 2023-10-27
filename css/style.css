@@ -220,3 +220,7 @@ a.bg-primary:focus,a.bg-primary:hover {
     opacity: 0;
   }
 }
+
+.hover {
+  cursor: pointer;
+}
