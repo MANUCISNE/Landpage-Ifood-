@@ -70,6 +70,8 @@ body {
 .img-colaboradores{
   width:5.5rem
 }
+
+
 @media only screen and (max-width: 768px) {
   .carousel-height{
     height: 16rem;
@@ -116,7 +118,7 @@ a.text-light:hover{
 }
 .btn-outline-light:hover{
   background-color: var(--white) !important;
-  color:var(--light) !important;
+  color:var(--primary) !important;
 }
 @media (prefers-color-scheme: dark){
 
