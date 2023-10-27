@@ -57,3 +57,6 @@ Foram aplicadas **boas práticas de SEO** para garantir que a proposta do site *
 
 *Este projeto foi desenvolvido como parte da turma **#VemSerTech**, uma parceria entre o *iFood* e a *Ada*, com o objetivo de promover a diversidade na tecnologia.*
 
+https://github.com/MANUCISNE/Landpage-Ifood-/assets/117774887/ddefde5d-df05-405d-90a4-d02227710e1a
+
+https://github.com/MANUCISNE/Landpage-Ifood-/assets/117774887/ee390c94-61e9-496a-8fa5-1174b3e971d3
