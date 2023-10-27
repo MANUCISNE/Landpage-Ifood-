@@ -28,3 +28,7 @@ function getInputsAddress(){
     estado:document.getElementById('inputEstados')
   })
 }
+function formSubmit (form){
+  form.eventPreventDefault()
+  console.log(form)
+}

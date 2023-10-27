@@ -3,13 +3,14 @@ body {
 }
 
 .box-shadow {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
-              0 4px 8px 0 rgba(0,0,0,.05);
+  box-shadow: 0 2px 4px 0 var(--shadow),
+  0 4px 8px 0 var(--shadow);
 }
 
 #home-quote {
   background: url('../img/bg-quote.jpg') center center;
   background-size: cover;
+  background-position: 50% 70%;
 }
 
 @media (max-width: 767px) {
@@ -25,7 +26,7 @@ body {
 }
 
 .lista-plano li + li {
-  border-top: 1px solid rgba(0,0,0,.2);
+  border-top: 1px solid var(--li-border);
 }
 
 .lista-plano li {
@@ -41,8 +42,33 @@ body {
 .carousel-height{
   height: 26rem;
 }
+
 .text-sm-center{
   text-align: start !important;
+}
+
+.img-card{
+  background-image: radial-gradient(circle, var(--danger-tranparent), transparent);
+  border-radius: 50%;
+  box-shadow: -0px -0px 35px var(--danger-tranparent), 
+ 0px 0px 35px var(--danger-tranparent);
+}
+.filtro-home{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent,transparent, var(--gray-bg)) ;
+  opacity: 1;
+  z-index: 0;
+}
+.container-colaboradores{
+  height: 5.5rem;
+  width:5.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.img-colaboradores{
+  width:5.5rem
 }
 @media only screen and (max-width: 768px) {
   .carousel-height{
@@ -56,10 +82,16 @@ body {
   .carousel-height{
     height: 14rem;
   }
+  .display-4{
+    font-size: 2.5rem ;
+  }
 }
 @media only screen and (min-width: 1500px) {
   .carousel-height{
     height: 36rem;
+  }
+  #home-quote{
+    height: 30rem;
   }
 }
 
@@ -67,6 +99,9 @@ body {
 :root{
   --primary:#ea1d2c;
   --danger:#ee4c58;
+  --shadow:rgba(0,0,0,.05);
+  --li-border:rgba(0,0,0,.2);
+  --danger-tranparent: #ee4c585e;
 }
 
 .bg-dark-gray{
@@ -92,10 +127,16 @@ a.text-light:hover{
     --light:#0e0e0e;
     --dark:#d9d4d4;
     --gray-bg:#ffffff4a;
-    --secondary:#d6d0d0
+    --secondary:#d6d0d0;
+    --shadow:rgba(255,255,255,.05);
+    --li-border:rgba(255,255,255,.2);
+    
   }
   button:focus{
     outline: 1px auto var(--white) !important;
+  }
+  .filtro-home{
+    background-image: linear-gradient(to bottom, transparent,transparent, #535353); 
   }
 }
 

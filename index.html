@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
               <label for="loginSenha">Senha</label>
-              <input type="password" class="form-control" id="loginSenha">
+              <input minlength="8" type="password" class="form-control" id="inputSenha" placeholder="Senha de acesso" required>
             </div>
             <button type="submit" class="btn bg-primary text-white">Entrar na Conta</button>
             <small class="text-muted text-white">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
@@ -49,18 +49,41 @@
   <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content bg-light text-dark pb-4">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalLoginTitulo">Contate nos</h5>
+          <h5 class="modal-title" id="modalLoginTitulo">Conheça nossos colaboradores !</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span class="text-white" aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body d-flex">
-          <div class="flex-1 d-flex flex-column align-items-center">
-            <div class="w-5 h-5 overflow-hidden bg-primary"></div>
+        <div class="modal-body">
+          <div class=" d-flex align-items-center flex-column mb-4">
+            <h5>Siga nosso Github !</h5>
+            <div class="d-flex flex-column flex-1">
+                <img class="img-colaboradores" src="./img/icones/github.png" alt="Guto">
+            </div>
+            </div>
           </div>
-          <div class="flex-1 d-flex flex-column align-items-center"></div>
+          <div class=" d-flex justify-content-center">
+            <div class="d-flex flex-column flex-1 mx-4">
+              <a href="https://github.com/GustavoSchmitt" target="_blank" rel="noopener noreferrer">
+
+                <div class="container-colaboradores mx-auto mb-3">
+                  <img class="img-colaboradores" src="./img/colaboradores/guto.jpeg" alt="Guto">
+                </div>
+                <h6>Guto Schmitt</h6>
+              </a>
+            </div>
+            <div class="d-flex flex-column flex-1 mx-4">
+              <a href="https://github.com/MANUCISNE" target="_blank" rel="noopener noreferrer">
+
+                <div class="container-colaboradores mx-auto mb-3">
+                  <img class="img-colaboradores" src="./img/colaboradores/manu.png" alt="Guto">
+                </div>
+                <h6>Emanuela Cisne</h6>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,13 +95,13 @@
       <a href="index.html" class="navbar-brand">
         <img src="img/ifood-logo.png" width="80px" alt="Ifood">
       </a>
-  
+
       <button class="navbar-toggler border-white" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Abrir Navegação">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item d-flex justify-content-center">
@@ -88,7 +111,8 @@
             <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
           </li>
           <li class="nav-item d-flex justify-content-center">
-            <a class="btn btn-outline-light ml-md-2 text-white border-white text-primary-hover" href="inscricao.html">Inscreva-se</a>
+            <a class="btn btn-outline-light ml-md-2 text-white border-white text-primary-hover"
+              href="inscricao.html">Inscreva-se</a>
           </li>
         </ul>
       </div>
@@ -113,9 +137,9 @@
               </div>
             </div>
             <div class="carousel-item carousel-height object-fit-cover">
-              <img class="d-block w-100 " src="img/comidas-mesa-2.png" alt="Rápido Delivery">
+              <img class="d-block w-100 " src="img/comidas-mesa-2.png" alt="GourmetVia">
               <div class="carousel-caption">
-                <h3 class="display-4">Rápido Delivery</h3>
+                <h3 class="display-4">GourmetExpress</h3>
               </div>
             </div>
             <div class="carousel-item carousel-height object-fit-cover">
@@ -139,7 +163,8 @@
       <div class="col-lg-5 p-4 align-self-center">
         <h1 class="display-4 text-md-center text-sm-center">Realize já o seu pedido</h1>
         <p class="lead text-sm-center">O melhor clube de experiências gastronômicas, mais de 5.000 no inscritos no
-          <strong class="text-primary">Club Ifood</strong>.</p>
+          <strong class="text-primary">Club Ifood</strong>.
+        </p>
         <form action="">
           <div class="input-group input-group-lg">
             <input type="text" class="form-control" placeholder="Email" aria-label="Email" required>
@@ -160,52 +185,64 @@
         <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-md-6">
-          <div style="height: 100px;" class="d-flex justify-content-center">
-            <img src="img/icones/coffee-cup.png" alt="Cafeterias">
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+          <div class="m-4">
+            <div style="height: 100px;" class="d-flex justify-content-center">
+              <img class="img-card mb-0" src="img/icones/coffee-cup.png" alt="Cafeterias">
+            </div>
           </div>
           <h3>Cafeterias</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+          <p class="px-lg-3">Desperte seus sentidos com o aroma e o sabor do nosso café perfeitamente preparado.</p>
         </div>
 
-        <div class="col-xl-4 col-md-6">
-          <div style="height: 100px;" class="d-flex justify-content-center">
-            <img src="img/icones/ice-cream.png" alt="Sorvetes">
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+          <div class="m-4">
+            <div style="height: 100px;" class="d-flex justify-content-center">
+              <img class="img-card mb-0" src="img/icones/ice-cream.png" alt="Sorvetes">
+            </div>
           </div>
           <h3>Sorvetes</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+          <p class="px-lg-3">Derreta-se de prazer com nossos sorvetes cremosos e deliciosos.</p>
         </div>
 
-        <div class="col-xl-4 col-md-6">
-          <div style="height: 100px;" class="d-flex justify-content-center">
-            <img src="img/icones/burrito.png" alt="Comida Mexicana">
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+          <div class="m-4">
+            <div style="height: 100px;" class="d-flex justify-content-center">
+              <img class="img-card mb-0" src="img/icones/burrito.png" alt="Comida Mexicana">
+            </div>
           </div>
           <h3>Comida Mexicana</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+          <p class="px-lg-3">Viaje ao México em cada prato, com nossa comida mexicana autêntica e picante!</p>
         </div>
 
-        <div class="col-xl-4 col-md-6">
-          <div style="height: 100px;" class="d-flex justify-content-center">
-            <img src="img/icones/burger.png" alt="Burguer">
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+          <div class="m-4">
+            <div style="height: 100px;" class="d-flex justify-content-center">
+              <img class="img-card mb-0" src="img/icones/burger.png" alt="Burguer">
+            </div>
           </div>
           <h3>Burguer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+          <p class="px-lg-3">Saboreie nosso irresistível hambúrguer gourmet, uma explosão de sabor a cada mordida</p>
         </div>
 
-        <div class="col-xl-4 col-md-6">
-          <div style="height: 100px;" class="d-flex justify-content-center">
-            <img src="img/icones/sushi.png" alt="Sushi">
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+          <div class="m-4">
+            <div style="height: 100px;" class="d-flex justify-content-center">
+              <img class="img-card mb-0" src="img/icones/sushi.png" alt="Sushi">
+            </div>
           </div>
           <h3>Sushi</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+          <p class="px-lg-3">Delicie-se com o frescor e a autenticidade do nosso sushi artesanal.</p>
         </div>
 
-        <div class="col-xl-4 col-md-6">
-          <div style="height: 100px;" class="d-flex justify-content-center">
-            <img src="img/icones/pizza.png" alt="Pizza">
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+          <div class="m-4">
+            <div style="height: 100px;" class="d-flex justify-content-center">
+              <img class="img-card mb-0" src="img/icones/pizza.png" alt="Pizza">
+            </div>
           </div>
           <h3>Pizza</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+          <p class="px-lg-3">Desfrute da tradição italiana em cada fatia da nossa pizza artesanal.</p>
         </div>
 
       </div>
@@ -214,15 +251,17 @@
     </div>
   </section>
 
-  <section id="home-quote" class="p-md-5">
+  <section id="home-quote" class="position-relative">
+    <div class="filtro-home"></div>
     <blockquote class="blockquote text-center text-white p-md-5 p-3 m-0">
-      <p class="display-4"><em>"Comida é a linguagem que todos entendem, uma paixão que todos compartilham e uma
+      <p class="display-4 z-5 position-relative"><em>"Comida é a linguagem que todos entendem, uma paixão que todos
+          compartilham e uma
           experiência que nos conecta."</em></p>
-      <footer class="blockquote-footer text-white">Bob Dylan</footer>
+      <footer class="blockquote-footer text-white z-5 position-relative">Bob Dylan</footer>
     </blockquote>
   </section>
 
-  <footer class="bg-dark-gray text-light mt-md-5">
+  <footer class="bg-dark-gray text-light">
     <div class="container py-4">
       <div class="row flex">
         <div class="col-md-4 text-sm-center">
